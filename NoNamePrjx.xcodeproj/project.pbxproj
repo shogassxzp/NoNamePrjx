@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1FD28BE12F7FA3BA00FA92D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD28BDD2F7FA3BA00FA92D8 /* Assets.xcassets */; };
+		1FD28BE22F7FA3BA00FA92D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD28BDE2F7FA3BA00FA92D8 /* ContentView.swift */; };
+		1FD28BE32F7FA3BA00FA92D8 /* NoNamePrjxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD28BDF2F7FA3BA00FA92D8 /* NoNamePrjxApp.swift */; };
+		1FD28BE82F7FA40900FA92D8 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD28BE72F7FA40900FA92D8 /* MainScreen.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1FD28BCF2F7FA33B00FA92D8 /* NoNamePrjx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoNamePrjx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD28BDD2F7FA3BA00FA92D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FD28BDE2F7FA3BA00FA92D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1FD28BDF2F7FA3BA00FA92D8 /* NoNamePrjxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNamePrjxApp.swift; sourceTree = "<group>"; };
+		1FD28BE72F7FA40900FA92D8 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		1FD28BD12F7FA33B00FA92D8 /* NoNamePrjx */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NoNamePrjx;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1FD28BCC2F7FA33B00FA92D8 /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		1FD28BC62F7FA33B00FA92D8 = {
 			isa = PBXGroup;
 			children = (
-				1FD28BD12F7FA33B00FA92D8 /* NoNamePrjx */,
+				1FD28BE02F7FA3BA00FA92D8 /* NoNamePrjx */,
 				1FD28BD02F7FA33B00FA92D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,41 @@
 				1FD28BCF2F7FA33B00FA92D8 /* NoNamePrjx.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1FD28BE02F7FA3BA00FA92D8 /* NoNamePrjx */ = {
+			isa = PBXGroup;
+			children = (
+				1FD28BE62F7FA3EA00FA92D8 /* ConnectToRoom */,
+				1FD28BE42F7FA3BE00FA92D8 /* Main */,
+				1FD28BDD2F7FA3BA00FA92D8 /* Assets.xcassets */,
+				1FD28BDE2F7FA3BA00FA92D8 /* ContentView.swift */,
+				1FD28BDF2F7FA3BA00FA92D8 /* NoNamePrjxApp.swift */,
+				1FD28BE52F7FA3C700FA92D8 /* MovieDetails */,
+			);
+			path = NoNamePrjx;
+			sourceTree = "<group>";
+		};
+		1FD28BE42F7FA3BE00FA92D8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1FD28BE72F7FA40900FA92D8 /* MainScreen.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1FD28BE52F7FA3C700FA92D8 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		1FD28BE62F7FA3EA00FA92D8 /* ConnectToRoom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ConnectToRoom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +97,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				1FD28BD12F7FA33B00FA92D8 /* NoNamePrjx */,
 			);
 			name = NoNamePrjx;
 			packageProductDependencies = (
@@ -109,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD28BE12F7FA3BA00FA92D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD28BE82F7FA40900FA92D8 /* MainScreen.swift in Sources */,
+				1FD28BE22F7FA3BA00FA92D8 /* ContentView.swift in Sources */,
+				1FD28BE32F7FA3BA00FA92D8 /* NoNamePrjxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
