@@ -11,6 +11,7 @@
 		1FD28BE22F7FA3BA00FA92D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD28BDE2F7FA3BA00FA92D8 /* ContentView.swift */; };
 		1FD28BE32F7FA3BA00FA92D8 /* NoNamePrjxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD28BDF2F7FA3BA00FA92D8 /* NoNamePrjxApp.swift */; };
 		1FD28BE82F7FA40900FA92D8 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD28BE72F7FA40900FA92D8 /* MainScreen.swift */; };
+		1FD28BEA2F7FA7A400FA92D8 /* ConnectToRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD28BE92F7FA7A300FA92D8 /* ConnectToRoom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1FD28BDE2F7FA3BA00FA92D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1FD28BDF2F7FA3BA00FA92D8 /* NoNamePrjxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNamePrjxApp.swift; sourceTree = "<group>"; };
 		1FD28BE72F7FA40900FA92D8 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		1FD28BE92F7FA7A300FA92D8 /* ConnectToRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectToRoom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		1FD28BE62F7FA3EA00FA92D8 /* ConnectToRoom */ = {
 			isa = PBXGroup;
 			children = (
+				1FD28BE92F7FA7A300FA92D8 /* ConnectToRoom.swift */,
 			);
 			path = ConnectToRoom;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD28BEA2F7FA7A400FA92D8 /* ConnectToRoom.swift in Sources */,
 				1FD28BE82F7FA40900FA92D8 /* MainScreen.swift in Sources */,
 				1FD28BE22F7FA3BA00FA92D8 /* ContentView.swift in Sources */,
 				1FD28BE32F7FA3BA00FA92D8 /* NoNamePrjxApp.swift in Sources */,

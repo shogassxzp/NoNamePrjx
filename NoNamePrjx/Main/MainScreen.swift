@@ -15,7 +15,7 @@ struct MainScreen: View {
             Spacer()
             VStack(alignment: .center,spacing: 24) {
                 Button(action: {}) {
-                    Text("Create room")
+                    Text("Create room") // change on label with any icon
                         .foregroundStyle(.white)
                         .frame(minWidth: 160)
                         .padding(.horizontal, 24)
