@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-struct ListEntity: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct ListEntity: Identifiable {
+    var id = UUID()
+    let text: String
+    
 }
 
-#Preview {
-    ListEntity()
+extension ListEntity {
+    static let mock = ListEntity(text: "Comedy")
 }
+
