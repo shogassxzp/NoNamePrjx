@@ -73,7 +73,12 @@ struct MovieDetails: View {
                     }
                 }
                 .frame(maxWidth: .infinity, maxHeight: 80)
-                .glassEffect()
+                
+//                if #available(iOS, 26.0) {
+//                    .glassEffect()
+//                } else {
+//                    .background(.white)
+//                }
             }
             .padding(.bottom,6)
             .ignoresSafeArea()
