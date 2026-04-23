@@ -135,3 +135,6 @@ Local/
 # Assets always track changes in Assets.xcassets
 !Resources/Assets.xcassets/
 !Resources/Assets.xcassets/**/*
+.DS_Store
+NoNamePrjx.xcodeproj/project.pbxproj
+NoNamePrjx.xcodeproj/project.xcworkspace/xcuserdata/rssxzp.xcuserdatad/UserInterfaceState.xcuserstate
