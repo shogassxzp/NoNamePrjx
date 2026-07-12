@@ -42,6 +42,7 @@ struct MultiSelectFilterView: View {
                 }
                 .padding()
                 .padding(.horizontal)
+
             }
             .navigationTitle("Фильтры")
         
