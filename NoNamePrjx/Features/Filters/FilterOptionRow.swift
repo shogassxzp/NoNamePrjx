@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FilterChip: View {
+struct FilterOptionRow: View {
     let title: String
     let isSelected: Bool
     let action: () -> Void
@@ -32,3 +32,5 @@ struct FilterChip: View {
         )
     }
 }
+
+typealias FilterChip = FilterOptionRow

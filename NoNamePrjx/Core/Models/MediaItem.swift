@@ -1,12 +1,17 @@
 import Foundation
 
-struct MediaItem: Identifiable, Hashable {
-    let id: String
+struct MediaItem: Identifiable, Codable, Hashable {
+    let id: Int
     let title: String
     let overview: String
     let posterPath: String?
     let rating: Double
-    let releaseYear: String
+    let releaseYear: Int?
     let mediaType: MediaType
-    let geners: [String]
+    let genres: [Genre]
+
+    var displayYear: String {
+        guard let releaseYear else { return "Unknown" }
+        return String(releaseYear)
+    }
 }

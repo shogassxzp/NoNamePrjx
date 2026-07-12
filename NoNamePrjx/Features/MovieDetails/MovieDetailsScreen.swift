@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MovieDetails: View {
+struct MovieDetailsScreen: View {
     var body: some View {
         ZStack {
             Color.white.ignoresSafeArea()
@@ -88,5 +88,5 @@ struct MovieDetails: View {
 }
 
 #Preview {
-    MovieDetails()
+    MovieDetailsScreen()
 }

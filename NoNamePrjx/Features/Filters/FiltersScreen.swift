@@ -1,15 +1,11 @@
 import SwiftUI
 
-    // TODO: Find/Create background
-    // Change release date with datePicker
-
-struct MultiSelectFilterView: View {
+struct FiltersScreen: View {
     @State private var filterSections: [FilterSection] = FilterSection.mockFilterSection // change mock on API call
 
     var body: some View {
-        NavigationView {
+        AppBackground {
             VStack {
-                // Результат выбранных фильтров
                 SelectedFiltersSummary(sections: filterSections)
                     .padding(.horizontal)
 
@@ -22,7 +18,6 @@ struct MultiSelectFilterView: View {
                     .padding()
                 }
 
-                // Кнопки действий
                 HStack(spacing: 16) {
                     Button("Сбросить все") {
                         resetAllFilters()
@@ -45,7 +40,6 @@ struct MultiSelectFilterView: View {
 
             }
             .navigationTitle("Фильтры")
-        
         }
     }
 
@@ -66,7 +60,6 @@ struct MultiSelectFilterView: View {
     }
 }
 
-// Компонент для отображения выбранных фильтров
 struct SelectedFiltersSummary: View {
     let sections: [FilterSection]
 
@@ -136,8 +129,8 @@ struct FilterSectionView: View {
     }
 }
 
-// Preview
-
 #Preview {
-    MultiSelectFilterView()
+    NavigationStack {
+        FiltersScreen()
+    }
 }

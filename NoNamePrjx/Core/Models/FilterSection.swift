@@ -7,14 +7,12 @@
 
 import SwiftUI
 
-// Модель для элемента фильтра
 struct FilterItem: Identifiable, Hashable {
     let id = UUID()
     let title: String
     var isSelected: Bool = false
 }
 
-// Модель для секции фильтра
 struct FilterSection: Identifiable {
     let id = UUID()
     let title: String

@@ -1,8 +1,15 @@
 import Foundation
 
-enum MediaType: String, Codable, CaseIterable {
+enum MediaType: String, Codable, CaseIterable, Hashable {
     case movie
-    case tvShow
+    case tv
+
+    var title: String {
+        switch self {
+        case .movie:
+            return "Movie"
+        case .tv:
+            return "TV Show"
+        }
+    }
 }
-
-
