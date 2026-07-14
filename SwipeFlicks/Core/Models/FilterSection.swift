@@ -1,6 +1,6 @@
 //
 //  ListEntity.swift
-//  NoNamePrjx
+//  SwipeFlicks
 //
 //  Created by Игнат Рогачевич on 13.04.26.
 //

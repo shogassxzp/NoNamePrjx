@@ -14,4 +14,8 @@ struct MediaItem: Identifiable, Codable, Hashable {
         guard let releaseYear else { return "Unknown" }
         return String(releaseYear)
     }
+    
+    var displayRating: String {
+        return String(format: "%.1f", rating)
+    }
 }

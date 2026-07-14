@@ -27,8 +27,9 @@
 		1FB54A1E3004173300842252 /* SwipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB54A1D3004173300842252 /* SwipeViewModel.swift */; };
 		1FB54A203004197500842252 /* SwipeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB54A1F3004197500842252 /* SwipeScreen.swift */; };
 		1FB54A9630041CD100842252 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB54A9530041CC900842252 /* RatingView.swift */; };
+		1FB54A9930068BF000842252 /* MatchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB54A9830068BF000842252 /* MatchScreen.swift */; };
 		1FD28BE12F7FA3BA00FA92D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD28BDD2F7FA3BA00FA92D8 /* Assets.xcassets */; };
-		1FD28BE32F7FA3BA00FA92D8 /* NoNamePrjxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD28BDF2F7FA3BA00FA92D8 /* NoNamePrjxApp.swift */; };
+		1FD28BE32F7FA3BA00FA92D8 /* SwipeFlicksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD28BDF2F7FA3BA00FA92D8 /* SwipeFlicksApp.swift */; };
 		1FD28BE82F7FA40900FA92D8 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD28BE72F7FA40900FA92D8 /* HomeScreen.swift */; };
 		1FD28BEA2F7FA7A400FA92D8 /* JoinRoomScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD28BE92F7FA7A300FA92D8 /* JoinRoomScreen.swift */; };
 		1FFE8F803004086200B9DF60 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE8F7F3004086200B9DF60 /* MediaType.swift */; };
@@ -57,9 +58,10 @@
 		1FB54A1D3004173300842252 /* SwipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewModel.swift; sourceTree = "<group>"; };
 		1FB54A1F3004197500842252 /* SwipeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeScreen.swift; sourceTree = "<group>"; };
 		1FB54A9530041CC900842252 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
-		1FD28BCF2F7FA33B00FA92D8 /* NoNamePrjx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoNamePrjx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB54A9830068BF000842252 /* MatchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchScreen.swift; sourceTree = "<group>"; };
+		1FD28BCF2F7FA33B00FA92D8 /* SwipeFlicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeFlicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD28BDD2F7FA3BA00FA92D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1FD28BDF2F7FA3BA00FA92D8 /* NoNamePrjxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNamePrjxApp.swift; sourceTree = "<group>"; };
+		1FD28BDF2F7FA3BA00FA92D8 /* SwipeFlicksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeFlicksApp.swift; sourceTree = "<group>"; };
 		1FD28BE72F7FA40900FA92D8 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		1FD28BE92F7FA7A300FA92D8 /* JoinRoomScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinRoomScreen.swift; sourceTree = "<group>"; };
 		1FFE8F7F3004086200B9DF60 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
@@ -95,7 +97,7 @@
 		1F70001A3004100D00B9DF60 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				1FD28BDF2F7FA3BA00FA92D8 /* NoNamePrjxApp.swift */,
+				1FD28BDF2F7FA3BA00FA92D8 /* SwipeFlicksApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -103,6 +105,7 @@
 		1F70001B3004100E00B9DF60 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				1FB54A9A30068C9000842252 /* Match */,
 				1FB54A1C3004172B00842252 /* Swipe */,
 				1FD28BE42F7FA3BE00FA92D8 /* Home */,
 				1FD28BE62F7FA3EA00FA92D8 /* Room */,
@@ -172,10 +175,18 @@
 			path = UIElements;
 			sourceTree = "<group>";
 		};
+		1FB54A9A30068C9000842252 /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				1FB54A9830068BF000842252 /* MatchScreen.swift */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
 		1FD28BC62F7FA33B00FA92D8 = {
 			isa = PBXGroup;
 			children = (
-				1FD28BE02F7FA3BA00FA92D8 /* NoNamePrjx */,
+				1FD28BE02F7FA3BA00FA92D8 /* SwipeFlicks */,
 				1FD28BD02F7FA33B00FA92D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -183,12 +194,12 @@
 		1FD28BD02F7FA33B00FA92D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1FD28BCF2F7FA33B00FA92D8 /* NoNamePrjx.app */,
+				1FD28BCF2F7FA33B00FA92D8 /* SwipeFlicks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1FD28BE02F7FA3BA00FA92D8 /* NoNamePrjx */ = {
+		1FD28BE02F7FA3BA00FA92D8 /* SwipeFlicks */ = {
 			isa = PBXGroup;
 			children = (
 				1F70001A3004100D00B9DF60 /* App */,
@@ -196,7 +207,7 @@
 				1F70001B3004100E00B9DF60 /* Features */,
 				1FD28BDD2F7FA3BA00FA92D8 /* Assets.xcassets */,
 			);
-			path = NoNamePrjx;
+			path = SwipeFlicks;
 			sourceTree = "<group>";
 		};
 		1FD28BE42F7FA3BE00FA92D8 /* Home */ = {
@@ -251,9 +262,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1FD28BCE2F7FA33B00FA92D8 /* NoNamePrjx */ = {
+		1FD28BCE2F7FA33B00FA92D8 /* SwipeFlicks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FD28BDA2F7FA33B00FA92D8 /* Build configuration list for PBXNativeTarget "NoNamePrjx" */;
+			buildConfigurationList = 1FD28BDA2F7FA33B00FA92D8 /* Build configuration list for PBXNativeTarget "SwipeFlicks" */;
 			buildPhases = (
 				1FD28BCB2F7FA33B00FA92D8 /* Sources */,
 				1FD28BCC2F7FA33B00FA92D8 /* Frameworks */,
@@ -263,11 +274,11 @@
 			);
 			dependencies = (
 			);
-			name = NoNamePrjx;
+			name = SwipeFlicks;
 			packageProductDependencies = (
 			);
-			productName = NoNamePrjx;
-			productReference = 1FD28BCF2F7FA33B00FA92D8 /* NoNamePrjx.app */;
+			productName = SwipeFlicks;
+			productReference = 1FD28BCF2F7FA33B00FA92D8 /* SwipeFlicks.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -285,7 +296,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1FD28BCA2F7FA33B00FA92D8 /* Build configuration list for PBXProject "NoNamePrjx" */;
+			buildConfigurationList = 1FD28BCA2F7FA33B00FA92D8 /* Build configuration list for PBXProject "SwipeFlicks" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -299,7 +310,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1FD28BCE2F7FA33B00FA92D8 /* NoNamePrjx */,
+				1FD28BCE2F7FA33B00FA92D8 /* SwipeFlicks */,
 			);
 		};
 /* End PBXProject section */
@@ -328,6 +339,7 @@
 				1F9591CD2F8C328D00CA90C1 /* FilterSection.swift in Sources */,
 				1FFE8F823004089A00B9DF60 /* MediaItem.swift in Sources */,
 				1FB54A9630041CD100842252 /* RatingView.swift in Sources */,
+				1FB54A9930068BF000842252 /* MatchScreen.swift in Sources */,
 				1F7000033004100100B9DF60 /* MediaFilters.swift in Sources */,
 				1F7000113004100800B9DF60 /* Endpoint.swift in Sources */,
 				1F70000D3004100600B9DF60 /* MockRoomService.swift in Sources */,
@@ -345,7 +357,7 @@
 				1F9591772F8C2E9000CA90C1 /* FiltersScreen.swift in Sources */,
 				1F7000073004100300B9DF60 /* MediaService.swift in Sources */,
 				1F7000193004100C00B9DF60 /* PrimaryButton.swift in Sources */,
-				1FD28BE32F7FA3BA00FA92D8 /* NoNamePrjxApp.swift in Sources */,
+				1FD28BE32F7FA3BA00FA92D8 /* SwipeFlicksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +506,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rogachevich.ignat.NoNamePrjx;
+				PRODUCT_BUNDLE_IDENTIFIER = rogachevich.ignat.SwipeFlicks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -531,7 +543,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rogachevich.ignat.NoNamePrjx;
+				PRODUCT_BUNDLE_IDENTIFIER = rogachevich.ignat.SwipeFlicks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -550,7 +562,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FD28BCA2F7FA33B00FA92D8 /* Build configuration list for PBXProject "NoNamePrjx" */ = {
+		1FD28BCA2F7FA33B00FA92D8 /* Build configuration list for PBXProject "SwipeFlicks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1FD28BD82F7FA33B00FA92D8 /* Debug */,
@@ -559,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1FD28BDA2F7FA33B00FA92D8 /* Build configuration list for PBXNativeTarget "NoNamePrjx" */ = {
+		1FD28BDA2F7FA33B00FA92D8 /* Build configuration list for PBXNativeTarget "SwipeFlicks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1FD28BDB2F7FA33B00FA92D8 /* Debug */,

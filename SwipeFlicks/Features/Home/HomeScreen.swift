@@ -1,6 +1,6 @@
 //
 //  MainScreen.swift
-//  NoNamePrjx
+//  SwipeFlicks
 //
 //  Created by Игнат Рогачевич on 3.04.26.
 //

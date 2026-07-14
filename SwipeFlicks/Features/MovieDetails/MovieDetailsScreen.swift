@@ -1,6 +1,6 @@
 //
 //  MovieDetails.swift
-//  NoNamePrjx
+//  SwipeFlicks
 //
 //  Created by Игнат Рогачевич on 3.04.26.
 //
@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MovieDetailsScreen: View {
+    let item: MediaItem
+    
     var body: some View {
         ZStack {
             Color.white.ignoresSafeArea()
@@ -15,10 +17,10 @@ struct MovieDetailsScreen: View {
             ScrollView {
                 VStack(alignment: .center, spacing: 16) {
                     HStack {
-                        Text("Blade runner")
+                        Text(item.title)
                             .font(.title) // Title
                         Spacer()
-                        Text("9.1") // Rating
+                        Text(item.displayRating) // Rating
                             .font(.title)
                             .padding()
                     }
@@ -27,7 +29,7 @@ struct MovieDetailsScreen: View {
                         .frame(maxWidth: 250, maxHeight: 400)
                         .aspectRatio(contentMode: .fit)
                         .clipShape(RoundedRectangle(cornerRadius: 32))
-                    Text("В мире недалекого будущего получает распространение новый мощный наркотик — препарат. Агент Фред, полицейский под прикрытием, получает задание выследить мелкого поставщика опасного вещества — наркомана Боба Арктора. Но правда ли это? Или агент Фред — это просто игра воспаленного разума Боба? Кто есть кто теперь, когда границы реальности так зыбки? Роман получил премию Британской ассоциации научной фантастики в 1979 году и был экранизирован Ричардом Линклейтером в 2006 году. ")
+                    Text(item.overview)
                     Image(.ref2)
                         .resizable()
                         .scaledToFit()
@@ -88,5 +90,17 @@ struct MovieDetailsScreen: View {
 }
 
 #Preview {
-    MovieDetailsScreen()
+    MovieDetailsScreen(item: MediaItem(
+        id: 78,
+        title: "Blade Runner",
+        overview: "A retired detective hunts synthetic humans through a rain-soaked future Los Angeles.",
+        posterPath: nil,
+        rating: 8.1,
+        releaseYear: 1982,
+        mediaType: .movie,
+        genres: [
+            Genre(id: 878, name: "Science Fiction"),
+            Genre(id: 53, name: "Thriller"),
+        ]
+    ))
 }

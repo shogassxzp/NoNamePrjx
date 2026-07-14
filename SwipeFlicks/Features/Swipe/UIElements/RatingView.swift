@@ -1,6 +1,6 @@
 //
 //  RatingView.swift
-//  NoNamePrjx
+//  SwipeFlicks
 //
 //  Created by Игнат Рогачевич on 12.07.2026.
 //
